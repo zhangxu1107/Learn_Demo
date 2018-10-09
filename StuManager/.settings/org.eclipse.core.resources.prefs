@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/cn/zx/dao/impl/StuDaoImpl.java=UTF-8
+encoding//src/cn/zx/dao/impl/UserDaoImpl.java=UTF-8
+encoding//src/cn/zx/domain/Student.java=UTF-8
+encoding//src/cn/zx/util/JDBCUtil.java=UTF-8
