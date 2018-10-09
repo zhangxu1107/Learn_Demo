@@ -1,0 +1,53 @@
+}
+
+	}
+		bw.close();
+		
+		//5,关流
+		}
+			bw.newLine();
+			bw.write(list.get(i));
+		for(int i = list.size() - 1; i >= 0; i--) {
+		BufferedWriter bw = new BufferedWriter(new FileWriter("revzzz.txt"));
+		//4,倒着遍历集合将数据写到文件上
+		
+		br.close();											//关流
+		}
+			list.add(line);
+		while((line = br.readLine()) != null) {
+		String line;
+		//3,将读到的数据存储在集合中
+		ArrayList<String> list = new ArrayList<>();
+		//2,创建集合对象
+		
+		BufferedReader br = new BufferedReader(new FileReader("zzz.txt"));
+		// 1,创建输入输出流对象
+		//改写后是尽量晚开早关
+	public static void main(String[] args) throws IOException {
+	 */
+	 * 流对象尽量晚开早关
+	 * 注意事项:
+	 * 
+	 * @throws IOException 
+	 * 5,关流
+	 * 4,倒着遍历集合将数据写到文件上
+	 * 3,将读到的数据存储在集合中
+	 * 2,创建集合对象
+	 * 1,创建输入输出流对象
+	 * 分析:
+	 * 
+	 * 将一个文本文档上的文本反转,第一行和倒数第一行交换,第二行和倒数第二行交换
+	 * @param args
+	/**
+
+public class Test1 {
+
+import java.util.ArrayList;
+import java.io.IOException;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+
+package com.heima.test;

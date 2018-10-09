@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Web_ServletRegister</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>demo</servlet-name>
+		<servlet-class>cn.zx.servlet.Demo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/demo</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- 用于配置全局的参数，，哪个servlet都可以拿，ServletContext -->
+	<context-param>
+		<param-name>address</param-name>
+		<param-value>重庆合川</param-value>
+	</context-param>
+
+
+	<servlet>
+		<servlet-name>ServletContext_01</servlet-name>
+		<servlet-class>cn.zx.servletcontext.ServletContext_01</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletContext_01</servlet-name>
+		<url-pattern>/ServletContext_01</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletContext_02</servlet-name>
+		<servlet-class>cn.zx.servletcontext.ServletContext_02</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletContext_02</servlet-name>
+		<url-pattern>/ServletContext_02</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>demo_02</servlet-name>
+		<servlet-class>cn.zx.servlet.Demo_02</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo_02</servlet-name>
+		<url-pattern>/demo_02</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>demo_03</servlet-name>
+		<servlet-class>cn.zx.servlet.Demo_03</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo_03</servlet-name>
+		<url-pattern>/demo_03</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- 登录 -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>cn.zx.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--登录成功 的次数-->
+	<servlet>
+		<servlet-name>CountSrevlet</servlet-name>
+		<servlet-class>cn.zx.servlet.CountSrevlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CountSrevlet</servlet-name>
+		<url-pattern>/CountSrevlet</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stus>
+	<stu id="10086">
+		<id>100086</id>
+		<name>张三</name>
+		<age>18</age>
+	</stu>
+	<stu id="10019">
+		<name>李四</name>
+		<age>18</age>
+	</stu>
+</stus>
